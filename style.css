@@ -309,12 +309,29 @@ body {
 
 #contact {
   height: 700px;
-  margin-top: 50px;
+  width: 100%;
+  padding-left: 5px;
+  background-color: rgb(255, 145, 111);
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 #contact_container {
-  width: 100%;
-  height: 700px;
-  margin-top: 100px;
-  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: space-around;
+  line-height: 4em;
+}
+
+#contact h1 {
+  padding-top: 3em;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  #contact_container {
+    flex-direction: column;
+  }
+  #contact {
+    padding-left: 15px;
+  }
 }
